@@ -12,6 +12,5 @@ def home(request):
     View responsible for rendering the home page html
     """
     return render(request=request,
-                  template_name='recipes/home.html',
-                  context={"name": "andre"}
+                  template_name='recipes/pages/home.html',
                   )
