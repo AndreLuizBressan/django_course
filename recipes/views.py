@@ -1,6 +1,17 @@
-from django.http import HttpResponse
+"""
+Module responsible for storing recipes-related
+views definitions
+"""
+
 from django.shortcuts import render
 
+
 # Create your views here.
-def my_view(request):
-    return HttpResponse('Hello world')
+def home(request):
+    """
+    View responsible for rendering the home page html
+    """
+    return render(request=request,
+                  template_name='recipes/home.html',
+                  context={"name": "andre"}
+                  )

@@ -1,8 +1,13 @@
+"""
+Module responsible for storing recipes-related
+url routing definition
+"""
+
 from django.urls import path
 
-from .views import my_view
+from .views import home
 
 
 urlpatterns = [
-    path('', my_view)
+    path('', home)
 ]
